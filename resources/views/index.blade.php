@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html translate="no">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +26,9 @@
             <h1 class="wedding-title">The Wedding of</h1>
             <h2 class="bride-title">Marenza & Gelian</h2>
             <h3 class="dear-title">Kepada Yth. <br> Bapak/Ibu/Saudara/i</h3>
-            <h1 class="guest-title">Nama Tamu</h1>
+            @if (request('to'))
+                <h1 class="guest-title">{{ request('to') }}</h1>
+            @endif
             <span>
                 <button id="openBtn">
                     <i class="fa-solid fa-envelope"></i>
@@ -320,7 +321,7 @@
                 <span class="journey-3">
                     <img src="{{ asset('img/photo/photo-4.jpg') }}">
                     <h3 class="moment">Menikah</h3>
-                    <p>Pada bulan Juli 2024, kami resmi menikah, menyatukan cinta dan komitmen kami dalam sebuah perayaan yang tak terlupakan.</p>
+                    <p>Pada bulan Juli 2024, kami menyatukan cinta dan komitmen dalam sebuah perayaan yang tak terlupakan, menghadapi jenjang berikutnya dalam kehidupan bersama.</p>
                 </span>
             </div>
         </section>

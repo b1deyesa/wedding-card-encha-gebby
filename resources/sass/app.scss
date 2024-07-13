@@ -1136,6 +1136,105 @@ body * {
         color: #FFF;
     }
 }
+.create-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    &::after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #000000CC;
+        z-index: -1;
+    }
+    & > img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -20;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2em;
+        margin: 2em 0;
+        width: 100%;
+        max-width: 30em;
+    }
+    .container .title {
+        font-family: "Cormorant Garamond";
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        margin: 0 0 1em;
+        color: #FFF;
+    }
+    .container .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+    }
+    .container .form .input {
+        display: flex;
+        gap: .5em;
+    }
+    .container .form .input input {
+        width: 100%;
+        padding: .4em .5em;
+    }
+    .container .form .input button {
+        padding: 0 1em;
+        background: #FFFFFF20;
+        border: 1px solid #FFFFFFAA;
+        color: #FFF;
+    }
+    .container .form button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: .3em;
+        border: 0;
+        outline: 0;
+        border-radius: .3em;
+        cursor: pointer;
+        &:disabled {
+            opacity: .2;
+        }
+    }
+    .container .form .action {
+        display: flex;
+        gap: .5em;
+    }
+    .container .form .action button {
+        width: 100%;
+        padding: .5em;
+        font-size: .9em;
+        border-radius: .3em;
+        color: #FFF;
+        &:first-child {
+            background: #906d98;
+        }
+        &:last-child {
+            background: #449e5f;
+        }
+    }
+}
 
 @keyframes spin {
     0% { transform: rotate(0deg); }

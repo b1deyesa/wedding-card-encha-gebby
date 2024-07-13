@@ -7,7 +7,7 @@
     <title>Wedding Card</title>
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <script src="{{ asset('icon.js') }}" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4419d23bf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     {{-- Welcome --}}

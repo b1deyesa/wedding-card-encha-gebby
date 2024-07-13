@@ -26,9 +26,7 @@
             <h1 class="wedding-title">The Wedding of</h1>
             <h2 class="bride-title">Marenza & Gelian</h2>
             <h3 class="dear-title">Kepada Yth. <br> Bapak/Ibu/Saudara/i</h3>
-            @if (request('to'))
-                <h1 class="guest-title">{{ request('to') }}</h1>
-            @endif
+            <h1 class="guest-title">{{ request('to') ?? NULL }}</h1>
             <span>
                 <button id="openBtn">
                     <i class="fa-solid fa-envelope"></i>

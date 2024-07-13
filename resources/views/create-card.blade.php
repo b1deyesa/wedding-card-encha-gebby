@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script src="https://kit.fontawesome.com/4419d23bf4.js" crossorigin="anonymous"></script>
+    @livewireStyles
 </head>
 <body class="create-card">
     <img src="{{ asset('img/photo/photo-3.jpg') }}">
@@ -15,5 +16,6 @@
         <h1 class="title">Bagi Undangan</h1>
         @livewire('link')
     </div>
+    @livewireScripts
 </body>
 </html>

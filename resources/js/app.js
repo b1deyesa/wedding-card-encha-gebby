@@ -132,7 +132,7 @@ window.addEventListener('scroll', function() {
     animate(document.querySelector('.detail header .title'));
     animate(document.querySelector('.detail header .subtitle'));
     animate(document.querySelector('.detail .time-place .fa-church'));
-    animate(document.querySelector('.detail .time-place .fa-church'));
+    animate(document.querySelector('.detail .time-place .fa-utensils'));
     animate(document.querySelector('.gallery .title'));
     animate(document.querySelector('.gallery .subtitle'));
     animate(document.querySelector('.thanks .thanks-title'), 800);

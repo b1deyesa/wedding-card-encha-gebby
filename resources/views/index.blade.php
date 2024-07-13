@@ -11,7 +11,7 @@
 </head>
 <body>
     {{-- Welcome --}}
-    <section class="welcome fixed">
+    <section class="welcome">
         <div class="slide">
             <img src="{{ asset('img/photo/photo-26.jpg') }}">
             <img src="{{ asset('img/photo/photo-32.jpg') }}">
@@ -242,7 +242,7 @@
         </section>
         
         {{-- Gallery --}}
-        {{-- <section class="gallery" style="background: url({{ asset('img/paper.jpg') }})">
+        <section class="gallery" style="background: url({{ asset('img/paper.jpg') }})">
             <div class="container">
                 <h3 class="title">A Glimpse of</h3>
                 <h1 class="subtitle">Our Moments</h1>
@@ -296,7 +296,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         
         <section class="journey">
             <img src="{{ asset('img/photo/sunset.jpg') }}" class="background">

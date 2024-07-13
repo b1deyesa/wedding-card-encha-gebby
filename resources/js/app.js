@@ -27,35 +27,35 @@ function autoScroll(durationInSeconds) {
 
     startScroll();
     
-    document.getElementById('audioBtn').addEventListener('click', function() {
-        const audio = document.getElementById('audio');
-        if (audio.paused) {
-            audio.play();
-            document.querySelector('#audioBtn i').classList.remove('fa-play');
-            document.querySelector('#audioBtn i').classList.add('fa-pause');
-            continueScroll();
-        } else {
-            audio.pause();
-            document.querySelector('#audioBtn i').classList.remove('fa-pause');
-            document.querySelector('#audioBtn i').classList.add('fa-play');
-            stopScroll(); 
-        }
-    });
-    document.getElementById('audio').addEventListener('ended', function() {
-        stopScroll();
-    });
+    // document.getElementById('audioBtn').addEventListener('click', function() {
+    //     const audio = document.getElementById('audio');
+    //     if (audio.paused) {
+    //         audio.play();
+    //         document.querySelector('#audioBtn i').classList.remove('fa-play');
+    //         document.querySelector('#audioBtn i').classList.add('fa-pause');
+    //         continueScroll();
+    //     } else {
+    //         audio.pause();
+    //         document.querySelector('#audioBtn i').classList.remove('fa-pause');
+    //         document.querySelector('#audioBtn i').classList.add('fa-play');
+    //         stopScroll(); 
+    //     }
+    // });
+    // document.getElementById('audio').addEventListener('ended', function() {
+    //     stopScroll();
+    // });
 
-    window.addEventListener('touchstart', stopScroll);
-    window.addEventListener('wheel', stopScroll)
+    // window.addEventListener('touchstart', stopScroll);
+    // window.addEventListener('wheel', stopScroll)
 }
 
 // Open Button
 document.getElementById('openBtn').addEventListener('click', function() {
     autoScroll(10);
     
-    document.getElementById('audio').currentTime = 0;
-    document.getElementById('audio').volume = 0.3;
-    document.getElementById('audio').play();
+    // document.getElementById('audio').currentTime = 0;
+    // document.getElementById('audio').volume = 0.3;
+    // document.getElementById('audio').play();
     
     document.getElementById('open').style.display = 'block';
     document.getElementById('open').style.transition = 'margin-top 1.6s ease-in-out';

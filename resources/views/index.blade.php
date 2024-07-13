@@ -331,7 +331,7 @@
                 <h1 class="title">Instagram Filter</h1>
                 <div class="text">
                     <p>Mari ikut serta dalam merayakan momen-momen spesial di hari pernikahan kami dengan menggunakan Filter Instagram di Stories yang telah kami siapkan.</p>
-                    <a target="_blank" href=""><i class="fa-brands fa-instagram"></i>Buka Kamera</a>
+                    <a target="_blank" href="https://www.instagram.com/ar/854254006601560/"><i class="fa-brands fa-instagram"></i>Buka Kamera</a>
                 </div>
             </div>
         </section>

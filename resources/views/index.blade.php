@@ -43,7 +43,7 @@
         
         {{-- Audio --}}
         <div class="audio">
-            <audio id="audio" src="{{ asset('audio.mp3') }}" controls style="display: none"></audio>
+            <audio id="audio" src="{{ asset('audio.mp3') }}" controls style="display: none" loop></audio>
             <button id="audioBtn"><i class="fa-solid fa-pause"></i></button>
         </div>
         

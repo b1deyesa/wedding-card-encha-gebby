@@ -60,6 +60,7 @@ document.getElementById('openBtn').addEventListener('click', function() {
     document.getElementById('open').style.display = 'block';
     document.getElementById('open').style.transition = 'margin-top 1.6s ease-in-out';
     
+    document.querySelector('.welcome').style.height = '100vh';
     document.querySelector('.welcome .photo').style.transition = 'all 400ms ease-in-out';
     document.querySelector('.welcome .wedding-title').style.transition = 'opacity 400ms ease-in-out';
     document.querySelector('.welcome .bride-title').style.transition = 'opacity 400ms ease-in-out';

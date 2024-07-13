@@ -49,6 +49,11 @@ function autoScroll(durationInSeconds) {
     window.addEventListener('wheel', stopScroll)
 }
 
+window.addEventListener("load", function() {
+    document.getElementById("loader-wrapper").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  });
+
 // Open Button
 document.getElementById('openBtn').addEventListener('click', function() {
     document.getElementById('audio').currentTime = 0;
@@ -124,6 +129,16 @@ window.addEventListener('scroll', function() {
     animate(document.querySelector('.journey-3 img'));
     animate(document.querySelector('.journey-3 .moment'));
     animate(document.querySelector('.journey-3 p'));
+    animate(document.querySelector('.detail header .title'));
+    animate(document.querySelector('.detail header .subtitle'));
+    animate(document.querySelector('.detail .time-place .fa-church'));
+    animate(document.querySelector('.detail .time-place .fa-church'));
+    animate(document.querySelector('.gallery .title'));
+    animate(document.querySelector('.gallery .subtitle'));
+    animate(document.querySelector('.thanks .thanks-title'), 800);
+    animate(document.querySelector('.thanks .bride-title'), 900);
+    animate(document.querySelector('.thanks .family-title'), 900);
+    animate(document.querySelector('.thanks .family'), 900);
 });
 
 document.addEventListener('DOMContentLoaded', function () {

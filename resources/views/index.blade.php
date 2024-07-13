@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/4419d23bf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <small>Memuat Undangan</small>
+    </div>
+    
     {{-- Welcome --}}
     <section class="welcome">
         <div class="slide">
@@ -26,7 +31,7 @@
             <span>
                 <button id="openBtn">
                     <i class="fa-solid fa-envelope"></i>
-                    <small>Open Invitation</small>
+                    <small>Buka Undangan</small>
                 </button>
                 <p>Mohon maaf apabila ada kesalahan penulisan nama/gelar.</p>
             </span>
@@ -341,7 +346,6 @@
                     Titaley & Mataheru <br>
                     Batuwael & Pattipeilohy
                 </h5>
-                
             </div>
         </section>
         

@@ -18,6 +18,29 @@ body * {
     display: none;
 }
 
+
+#loader-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#FFFFFFAA, #FFFFFFEF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    user-select: none;
+    #loader {
+        border: 4px solid #f3f3f3; /* Warna garis loader */
+        border-top: 4px solid #805084; /* Warna garis bagian atas loader */
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite; /* Animasi putar */
+    }
+}
 .welcome {
     position: relative;
     display: flex;
@@ -710,11 +733,23 @@ body * {
     .container header .text .title {
         font-size: 1.4em;
         font-weight: 400;
+        transform: translateX(-180%);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .container header .text .subtitle {
         font-size: 2.8em;
         font-family: "Cormorant Garamond";
         font-weight: 600;
+        transform: translateX(180%);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .container .time-place {
         display: flex;
@@ -734,6 +769,13 @@ body * {
     .container .time-place span > i {
         font-size: 2.2em;
         color: #332a35;
+        opacity: 0;
+        transform: scale(.6);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
     .container .time-place span .title {
         font-family: "Cormorant Garamond", serif;
@@ -756,6 +798,15 @@ body * {
         display: flex;
         gap: .5em;
         width: 100%;
+        &:nth-child(1) i {
+            animation: open 1s ease-in-out .3s infinite;
+        }
+        &:nth-child(2) i {
+            animation: open 1s ease-in-out .6s infinite;
+        }
+        &:nth-child(3) i {
+            animation: open 1s ease-in-out .9s infinite;
+        }
     }
     .container .time-place span ul li i {
         font-size: .9em;
@@ -784,6 +835,7 @@ body * {
         border-radius: .5em;
         background: #da7b82;
         color: #FFF;
+        animation: open 2s ease-in-out infinite;
     }
     .container .time-place span .action a i {
         font-size: .8em;
@@ -800,6 +852,13 @@ body * {
     .container .title {
         font-size: 1.4em;
         font-weight: 400;
+        opacity: 0;
+        transform: scale(.6);
+        transition: .8s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
     .container .subtitle {
         font-size: 2.8em;
@@ -807,6 +866,13 @@ body * {
         font-weight: 600;
         margin: 0 0 1.2em;
         color: #957DAD;
+        opacity: 0;
+        transform: scale(.6);
+        transition: .8s ease-out .3s;
+        &.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
     .container .list {
         display: grid;
@@ -996,21 +1062,49 @@ body * {
     .container .thanks-title {
         font-size: 1.7em;
         font-weight: 400;
+        opacity: 0;
+        transform: translateX(-5em);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .container .bride-title {
         font-family: "Cormorant Garamond", serif;
         font-size: 2.6em;
         font-weight: 600;
         margin: 0 0 .4em;
+        opacity: 0;
+        transform: translateX(5em);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .container .family-title {
         font-size: 1em;
         font-weight: 500;
+        opacity: 0;
+        transform: translateX(-5em);
+        transition: 1.2s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
     .container .family {
         font-size: 1.1em;
         font-weight: 500;
         line-height: 1.4em;
+        opacity: 0;
+        transform: scale(.6);
+        transition: .8s ease-out;
+        &.animate {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
 #open {
@@ -1034,6 +1128,10 @@ body * {
     }
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 @keyframes fadeLeft {
     0% {
         opacity: 0;

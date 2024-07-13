@@ -12,15 +12,17 @@ class Link extends Component
     
     public function mount()
     {
-        $this->link = env('APP_URL');
+        $this->link = 'https://wedding-card.bideyesa.com/';
     }
     
     public function updatedName()
     {
-        if ($this->name != NULL) {
+        if ($this->name != NULL || $this->name != "") {
             $this->disabled = false;
+        } else {
+            $this->disabled = true;
         }
-        $this->link = env('APP_URL'). '?to=' . rawurlencode($this->name);
+        $this->link = 'https://wedding-card.bideyesa.com/' . '?to=' . rawurlencode($this->name);
     }
     
     public function clear()

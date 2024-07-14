@@ -15,6 +15,15 @@ document.addEventListener('DOMContentLoaded', function () {
         slides[currentSlide].style.opacity = 1;
         setInterval(showNextSlide, 5000); // Change slide every 5 seconds
     }
+    
+    window.addEventListener("visibilitychange", function () {
+        const audio = document.getElementById('audio');
+        if (document.hidden) {
+            audio.pause();
+        } else {
+            audio.play();
+        }
+    });
 
     // Set up the main slide show and detail slide show
     setupSlideShow('.slide img');

@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener("load", function () {
+
         let loadingPercentage = 0;
         const loadingScreen = document.getElementById("loader-wrapper");
         const loadingPercentageText = document.getElementById('loading-percentage');

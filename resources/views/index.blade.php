@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Dengan senang hati mengundang Anda untuk berbagi kebahagiaan kami pada hari pernikahan kami.">
+    <meta name="description" content="Untuk {{ request('to') ?? NULL }}">
     <link rel="icon" href="{{ asset('img/photo/photo-2.jpg') }}">
     <title>Marenza & Gelian Wedding Invitation</title>
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">

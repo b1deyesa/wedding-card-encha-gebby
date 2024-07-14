@@ -11,6 +11,7 @@
 <body>
     <div id="loader-wrapper">
         <div id="loader"></div>
+        <div id="loading-percentage">0%</div>
         <small>Memuat Undangan</small>
     </div>
     

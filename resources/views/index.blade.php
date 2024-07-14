@@ -1,8 +1,10 @@
 <html translate="no">
 <head>
+    ht
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{ asset('img/photo/photo-2.jpg') }}">
     <title>Marenza & Gelian Wedding Invitation</title>
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])

@@ -12,7 +12,7 @@ class Link extends Component
     
     public function mount()
     {
-        $this->link = 'https://wedding-card.bideyesa.com/';
+        $this->link = 'https://marenza-gelian.online/';
     }
     
     public function updatedName()
@@ -22,7 +22,7 @@ class Link extends Component
         } else {
             $this->disabled = true;
         }
-        $this->link = 'https://wedding-card.bideyesa.com/' . '?to=' . rawurlencode($this->name);
+        $this->link = 'https://marenza-gelian.online/' . '?to=' . rawurlencode($this->name);
     }
     
     public function clear()

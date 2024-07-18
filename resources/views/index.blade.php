@@ -109,13 +109,13 @@
             </div>
         </section>
         
-        <div class="slide-dark">
+        {{-- <div class="slide-dark">
             <div class="slides slides-8">
                 <img src="{{ asset('img/photo/photo-1.jpg') }}">
                 <img src="{{ asset('img/photo/photo-13.jpg') }}">
                 <img src="{{ asset('img/photo/photo-14.jpg') }}">
             </div>
-        </div>
+        </div> --}}
         
         {{-- Bio --}}
         <section class="bio">

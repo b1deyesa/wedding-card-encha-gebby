@@ -11,11 +11,11 @@
     <script src="https://kit.fontawesome.com/4419d23bf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="loader-wrapper">
+    {{-- <div id="loader-wrapper">
         <div id="loader"></div>
         <div id="loading-percentage">0%</div>
         <small>Memuat Undangan</small>
-    </div>
+    </div> --}}
     
     {{-- Welcome --}}
     <section class="welcome">

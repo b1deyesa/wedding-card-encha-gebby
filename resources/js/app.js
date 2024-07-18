@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setupCounterAnimation('counter', 24, 4000);
 
     // Infinite loop slide setup
-    const slideClasses = ['.slides-1', '.slides-2', '.slides-3', '.slides-4', '.slides-5', '.slides-6', '.slides-7', '.slides-8'];
+    const slideClasses = ['.slides-1', '.slides-2', '.slides-3', '.slides-4', '.slides-5', '.slides-6', '.slides-7'];
 
     slideClasses.forEach(slideClass => {
         const slides = document.querySelector(slideClass);

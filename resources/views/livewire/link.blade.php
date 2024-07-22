@@ -16,7 +16,16 @@
     </div>
     <script>
         function shareToWhatsApp() {
-            var message = document.getElementById("myInput").value;
+            var message = 
+            "Kepada Yth.
+            Bapak/Ibu/Saudara/i
+            Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami :
+            🤵🏻 👰🏻‍♀ Marenza Dan Gelian
+            Untuk informasi detail mengenai acara, silahkan kunjungi :" + document.getElementById("myInput").value + 
+            "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
+            Atas kehadiran dan doa restunya kami ucapkan terima kasih.
+            Hormat kami,
+            Marenza Dan Gelian"
             var phoneNumber = 'number';
             var url = 'https://wa.me/'+ '?text=' + encodeURIComponent(message);
             window.open(url, '_blank');
